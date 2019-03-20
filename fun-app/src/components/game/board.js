@@ -37,7 +37,7 @@ export default class Board extends React.Component {
 
     render() {
         const status = 'Next player: X';
-        let rows = []
+        let rows = [];
         for (let i = 0; i < 3; i++) {
             rows.push(this.renderBoardRow(i * 3))
         }
