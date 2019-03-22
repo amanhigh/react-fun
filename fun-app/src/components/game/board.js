@@ -44,7 +44,7 @@ export default class Board extends React.Component {
 
         return (
             <div>
-                <div className="status">{status}</div>
+                <h2 className="text-center">{status}</h2>
                 <div>
                     {rows}
                 </div>
