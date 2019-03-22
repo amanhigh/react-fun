@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import ShoppingList from "./Shopping";
 import Game from "./game/game";
+import ThemeSwitcher from "./theme-switcher";
 
 class App extends Component {
     render() {
@@ -23,6 +24,7 @@ class App extends Component {
                     </a>
                 </header>
                 <ShoppingList/>
+                <ThemeSwitcher/>
             </div>
         );
     }
