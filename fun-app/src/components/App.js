@@ -3,28 +3,23 @@ import './App.css';
 import ShoppingList from "./Shopping";
 import Game from "./game/game";
 import ThemeSwitcher from "./theme-switcher";
+import {Col, Container, Row} from "react-bootstrap";
+import FunNav from "./nav";
 
 class App extends Component {
     render() {
         return (
             <div className="App">
                 <header className="App-header">
-                    <img src={process.env.PUBLIC_URL + 'logo.svg'} className="App-logo" alt="logo"/>
-                    <p>
-                        Edit <code>src/App.js</code> and save to reload.
-                    </p>
-                    <Game/>
-                    <a
-                        className="App-link"
-                        href="https://reactjs.org"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Learn React
-                    </a>
+                    <FunNav/>
                 </header>
-                <ShoppingList/>
-                <ThemeSwitcher/>
+                <Container>
+                    <Row>
+                        <Col><Game/></Col>
+                        <Col><ShoppingList/></Col>
+                        <Col><ThemeSwitcher/></Col>
+                    </Row>
+                </Container>
             </div>
         );
     }
